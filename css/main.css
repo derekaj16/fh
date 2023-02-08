@@ -2,14 +2,26 @@
     font-family: "BornReady";
     src: url("../assets/fonts/bornreadyupright.otf") format("opentype");
 }
+@font-face {
+    font-family: "Mistletoe";
+    src: url("../assets/fonts/mistletoesans.otf") format("opentype");
+}
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../assets/fonts/CenturyGothic.otf") format("opentype");
+}
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
     body {
         
     }
     header {
         height: 100px;
         box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+    .ward {
+
     }
     #bee {
         width: 100px;
@@ -39,12 +51,13 @@
     }
 }
 
-@media only screen and (min-width: 851px) {
+@media screen and (min-width: 801px) {
     body {
         
     }
     header {
         height: 115px;
+        margin-bottom: 75px;
     }
     #bee {
         width: 175px;
@@ -77,18 +90,35 @@
     }
 }
 
+html, body {
+    
+}
 body {
     font-family: 'Century Gothic';
+    width: 100vw;
+    
+}
+.content {
+    padding: 20px;
 }
 header {
     width: 100%;
     position: relative;
     border-bottom: solid black 8px;
+    overflow-x: hidden;
+    
 }
 #bee {
     position: absolute;
+    z-index: 10;
 }
 .beehive-container {
     position: absolute;
     overflow: hidden;
+}
+.header-text {
+    font-family: BornReady;
+}
+p {
+    font-family: CenturyGothic;
 }
