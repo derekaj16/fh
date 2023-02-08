@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "BornReady";
+    src: url("../assets/fonts/bornreadyupright.otf") format("opentype");
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        
+    }
+    header {
+        height: 100px;
+        box-sizing: border-box;
+    }
+    #bee {
+        width: 100px;
+        left: 50%;
+        transform: translate(-50%, 47%);
+    }
+    .beehive-container.first {
+        height: 60px;
+        left: -45px;
+        top: 32px;
+    }
+    .beehive-container.second {
+        height: 70px;
+        right: -62px;
+        top: 22px;
+    }
+    .beehive {
+        width: 150px;
+        position: relative;
+        top: 10px;
+    }
+    .beehive.first {
+        transform: rotate(32deg);
+    }
+    .beehive.second {
+        transform: rotate(-20deg);
+    }
+}
+
+@media only screen and (min-width: 851px) {
+    body {
+        
+    }
+    header {
+        height: 115px;
+    }
+    #bee {
+        width: 175px;
+        left: 50%;
+        transform: translate(-50%, 15%);
+    }
+    .beehive-container {
+    
+    }
+    .beehive-container.first {
+        height: 74px;
+        left: -53px;
+        top: 33px;
+    }
+    .beehive-container.second {
+        height: 90px;
+        right: -75px;
+        top: 17px;
+    }
+    .beehive {
+        width: 200px;
+        position: relative;
+        top: 10px;
+    }
+    .beehive.first {
+        transform: rotate(32deg);
+    }
+    .beehive.second {
+        transform: rotate(-20deg);
+    }
+}
+
+body {
+    font-family: 'Century Gothic';
+}
+header {
+    width: 100%;
+    position: relative;
+    border-bottom: solid black 8px;
+}
+#bee {
+    position: absolute;
+}
+.beehive-container {
+    position: absolute;
+    overflow: hidden;
+}
